@@ -17,3 +17,10 @@ sass ./main.scss ../lepisma.github.io/assets/css/main.css
 yes | cp ../lepisma.github.io/assets/css/main.css ../lepisma.github.io-deploy/assets/css/main.css
 #+END_SRC
 #+end_example
+
+There are the following main variables to customize:
+- ~orgo-file-name~. File name to look for tasks in. Defaults to ~README.org~.
+- ~org-task-prefix~. Babel block prefix for identifying tasks for orgo. Defaults
+  to ~orgo-~.
+- ~org-use-projectile~. Whether to use [[https://github.com/bbatsov/projectile][projectile]] for locating project root.
+  Defaults to ~nil~.
