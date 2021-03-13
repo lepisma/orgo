@@ -38,7 +38,7 @@
 (defcustom orgo-file-name "README.org"
   "The main file to look tasks in.")
 
-(defcustom orgo-task-prefix "om-"
+(defcustom orgo-task-prefix "orgo-"
   "Prefix to filter each task specified in org file with.")
 
 (defcustom orgo-use-projectile nil
