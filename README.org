@@ -2,25 +2,26 @@
 
 [[https://img.shields.io/github/v/tag/lepisma/orgo.svg?style=flat-square]]
 
-Task runner based on Org-Mode documents. Orgo provides a simpler and
-self-documenting alternative to task runners for basic workflows.
+Task runner based on Org-Mode documents. Orgo is a self-documenting alternative
+to complex task runners for simple workflows.
 
+** Usage
 Add documented [[https://orgmode.org/worg/org-contrib/babel/][org-babel]] tasks in your project's =README.org=. Name the block with
 =orgo-= prefix and run =orgo=.
 
 Here is an example:
 
-#+begin_example
-#+NAME: orgo-sass
-#+BEGIN_SRC shell :exports none
-sass ./main.scss ../lepisma.github.io/assets/css/main.css
-yes | cp ../lepisma.github.io/assets/css/main.css ../lepisma.github.io-deploy/assets/css/main.css
-#+END_SRC
-#+end_example
+#+begin_src org
+  ,#+NAME: orgo-sass
+  ,#+BEGIN_SRC shell :exports none
+  sass ./main.scss ../lepisma.github.io/assets/css/main.css
+  yes | cp ../lepisma.github.io/assets/css/main.css ../lepisma.github.io-deploy/assets/css/main.css
+  ,#+END_SRC
+#+end_src
 
 There are the following main variables to customize:
 - ~orgo-file-name~. File name to look for tasks in. Defaults to ~README.org~.
-- ~org-task-prefix~. Babel block prefix for identifying tasks for orgo. Defaults
+- ~orgo-task-prefix~. Babel block prefix for identifying tasks for orgo. Defaults
   to ~orgo-~.
-- ~org-use-projectile~. Whether to use [[https://github.com/bbatsov/projectile][projectile]] for locating project root.
+- ~orgo-use-projectile~. Whether to use [[https://github.com/bbatsov/projectile][projectile]] for locating project root.
   Defaults to ~nil~.
