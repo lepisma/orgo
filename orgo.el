@@ -3,7 +3,7 @@
 ;; Copyright (c) 2017 Abhinav Tushar
 
 ;; Author: Abhinav Tushar <contact@lepisma.xyz>
-;; Version: 0.0.2
+;; Version: 0.0.3
 ;; Package-Requires: ((helm "3.7.1") (projectile "2.3.0"))
 ;; URL: https://github.com/lepisma/orgo
 
