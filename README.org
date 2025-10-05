@@ -1,3 +1,7 @@
+#+begin_quote
+Development for this project has moved to sourcehut [[https://git.sr.ht/~lepisma/orgo][here]]. This repository is now in a read-only state.
+#+end_quote
+
 #+TITLE: orgo
 
 [[https://img.shields.io/github/v/tag/lepisma/orgo.svg?style=flat-square]]
